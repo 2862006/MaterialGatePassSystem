@@ -1,0 +1,106 @@
+14-Jun-2026 23:57:45.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.118
+14-Jun-2026 23:57:45.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 1 2026 19:30:30 UTC
+14-Jun-2026 23:57:45.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.118.0
+14-Jun-2026 23:57:45.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+14-Jun-2026 23:57:45.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Jun-2026 23:57:45.094 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Jun-2026 23:57:45.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+14-Jun-2026 23:57:45.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+14-Jun-2026 23:57:45.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Jun-2026 23:57:45.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118
+14-Jun-2026 23:57:45.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118
+14-Jun-2026 23:57:45.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Jun-2026 23:57:45.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+14-Jun-2026 23:57:45.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+14-Jun-2026 23:57:45.106 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\logging.properties
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jun-2026 23:57:45.107 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Jun-2026 23:57:45.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jun-2026 23:57:45.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+14-Jun-2026 23:57:45.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Jun-2026 23:57:45.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118
+14-Jun-2026 23:57:45.108 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118
+14-Jun-2026 23:57:45.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\temp
+14-Jun-2026 23:57:45.142 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.7] using APR version [1.7.6].
+14-Jun-2026 23:57:45.144 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+14-Jun-2026 23:57:45.144 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Jun-2026 23:57:45.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.19 27 Jan 2026]
+14-Jun-2026 23:57:45.532 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Jun-2026 23:57:45.557 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [718] milliseconds
+14-Jun-2026 23:57:45.619 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Jun-2026 23:57:45.620 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.118]
+14-Jun-2026 23:57:45.639 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\Gatepassweb.xml]
+14-Jun-2026 23:57:45.659 WARNING [main] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/Gatepassweb] in deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\Gatepassweb.xml] has been ignored
+14-Jun-2026 23:57:45.696 SEVERE [main] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\Gatepassweb.xml]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:600)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:608)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:677)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1836)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:572)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:463)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:726)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:209)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:872)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:736)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@50313382]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:404)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4164)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4286)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		... 35 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\rosha\OneDrive\Documents\NetBeansProjects\Gatepassweb\build\web] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:758)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 39 more
+14-Jun-2026 23:57:45.750 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\Gatepassweb.xml] has finished in [111] ms
+14-Jun-2026 23:57:45.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\docs]
+14-Jun-2026 23:57:46.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\docs] has finished in [428] ms
+14-Jun-2026 23:57:46.181 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\examples]
+14-Jun-2026 23:57:46.993 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\examples] has finished in [812] ms
+14-Jun-2026 23:57:46.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\host-manager]
+14-Jun-2026 23:57:47.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\host-manager] has finished in [64] ms
+14-Jun-2026 23:57:47.058 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\manager]
+14-Jun-2026 23:57:47.135 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\manager] has finished in [77] ms
+14-Jun-2026 23:57:47.136 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\ROOT]
+14-Jun-2026 23:57:47.177 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\webapps\ROOT] has finished in [41] ms
+14-Jun-2026 23:57:47.185 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Jun-2026 23:57:47.220 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1662] milliseconds
+14-Jun-2026 23:57:47.375 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\MaterialGatePassSystem.xml]
+14-Jun-2026 23:57:47.376 WARNING [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/MaterialGatePassSystem] in deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\MaterialGatePassSystem.xml] has been ignored
+14-Jun-2026 23:57:47.807 INFO [http-nio-8080-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Jun-2026 23:57:47.819 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\rosha\Downloads\apache-tomcat-9.0.118-windows-x64\apache-tomcat-9.0.118\conf\Catalina\localhost\MaterialGatePassSystem.xml] has finished in [444] ms
+14-Jun-2026 23:57:47.824 INFO [http-nio-8080-exec-8] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/MaterialGatePassSystem]] after start() had already been called. The second call will be ignored.

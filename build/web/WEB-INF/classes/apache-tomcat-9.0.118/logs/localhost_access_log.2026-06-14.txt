@@ -1,0 +1,14 @@
+127.0.0.1 - - [14/Jun/2026:23:57:47 +0530] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [14/Jun/2026:23:57:47 +0530] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [14/Jun/2026:23:57:47 +0530] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - - [14/Jun/2026:23:57:47 +0530] "HEAD /netbeans-tomcat-status-test HTTP/1.1" 404 -
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/ HTTP/1.1" 200 39
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/list HTTP/1.1" 200 300
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/list HTTP/1.1" 200 300
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/deploy?config=file%3A%2FC%3A%2FUsers%2Frosha%2FAppData%2FLocal%2FTemp%2Fcontext11159803444618118459.xml&path=/MaterialGatePassSystem HTTP/1.1" 200 80
+127.0.0.1 - roshan [14/Jun/2026:23:57:47 +0530] "GET /manager/text/start?path=/MaterialGatePassSystem HTTP/1.1" 200 79
+0:0:0:0:0:0:0:1 - - [14/Jun/2026:23:57:48 +0530] "GET /MaterialGatePassSystem HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2026:23:57:48 +0530] "GET /MaterialGatePassSystem/ HTTP/1.1" 200 467
