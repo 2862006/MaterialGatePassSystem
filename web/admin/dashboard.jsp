@@ -1,7 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
     String role = (String)session.getAttribute("role");
-    if(role == null || !role.equals("Admin")){
+    if(role == null || !role.equals("ADMIN")){
         response.sendRedirect("../login.jsp");
         return;
     }
