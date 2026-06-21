@@ -1,4 +1,3 @@
-
 package com.mgps.servlet;
 
 import com.mgps.util.DBConnection;
@@ -35,15 +34,15 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("name", name);
                 session.setAttribute("email", email);
 
-                if (role.equals("Admin")) {
-                    response.sendRedirect("admin/dashboard.jsp");
-                } else if (role.equals("Employee")) {
-                    response.sendRedirect("employee/dashboard.jsp");
-                } else if (role.equals("Security")) {
-                    response.sendRedirect("security/dashboard.jsp");
+                if (role.equals("ADMIN")) {
+                    response.sendRedirect(request.getContextPath() + "/admin/dashboard.jsp");
+                } else if (role.equals("EMPLOYEE")) {
+                    response.sendRedirect(request.getContextPath() + "/employee/dashboard.jsp");
+                } else if (role.equals("SECURITY")) {
+                    response.sendRedirect(request.getContextPath() + "/security/dashboard.jsp");
                 }
             } else {
-                response.sendRedirect("login.jsp?error=1");
+                response.sendRedirect(request.getContextPath() + "/login.jsp?error=1");
             }
             con.close();
         } catch (Exception e) {
