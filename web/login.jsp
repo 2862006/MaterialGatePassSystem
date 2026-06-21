@@ -65,7 +65,7 @@
         <h2>🏭 Gate Pass System</h2>
         <p>Material Gate Pass Management</p>
         
-        <form action="LoginServlet" method="post">
+       <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
             <input type="email" name="email" 
                    placeholder="Enter Email" required/>
             <input type="password" name="password" 
