@@ -35,18 +35,19 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("email", email);
 
                 if (role.equals("ADMIN")) {
-                    response.sendRedirect(request.getContextPath() + "/admin/dashboard.jsp");
+                    request.getRequestDispatcher("/admin/dashboard.jsp").forward(request, response);
                 } else if (role.equals("EMPLOYEE")) {
-                    response.sendRedirect(request.getContextPath() + "/employee/dashboard.jsp");
+                    request.getRequestDispatcher("/employee/dashboard.jsp").forward(request, response);
                 } else if (role.equals("SECURITY")) {
-                    response.sendRedirect(request.getContextPath() + "/security/dashboard.jsp");
+                    request.getRequestDispatcher("/security/dashboard.jsp").forward(request, response);
                 }
             } else {
-                response.sendRedirect(request.getContextPath() + "/login.jsp?error=1");
+                request.getRequestDispatcher("/login.jsp?error=1").forward(request, response);
             }
             con.close();
         } catch (Exception e) {
             e.printStackTrace();
+            request.getRequestDispatcher("/login.jsp?error=1").forward(request, response);
         }
     }
 }
