@@ -1,3 +1,4 @@
+
 package com.mgps.servlet;
 
 import com.mgps.util.DBConnection;
@@ -18,6 +19,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
+            DBConnection.initDatabase();
             Connection con = DBConnection.getConnection();
             String sql = "SELECT * FROM users WHERE email_id=? AND password=?";
             PreparedStatement ps = con.prepareStatement(sql);
