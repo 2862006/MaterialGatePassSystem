@@ -23,10 +23,13 @@
         th { background: #27ae60; color: white; padding: 12px; text-align: left; }
         td { padding: 12px; border-bottom: 1px solid #eee; }
         tr:hover { background: #f9f9f9; }
-        .pending { background:#f39c12; color:white; padding:3px 8px; border-radius:4px; }
-        .approved { background:#27ae60; color:white; padding:3px 8px; border-radius:4px; }
-        .rejected { background:#e74c3c; color:white; padding:3px 8px; border-radius:4px; }
+        .pending { background:#f39c12; color:white; padding:3px 8px; border-radius:4px; font-size:12px; }
+        .approved { background:#27ae60; color:white; padding:3px 8px; border-radius:4px; font-size:12px; }
+        .rejected { background:#e74c3c; color:white; padding:3px 8px; border-radius:4px; font-size:12px; }
         h3 { color: #27ae60; }
+        .gp-no { font-weight: bold; color: #2c3e50; font-size: 14px; }
+        .returnable { background: #3498db; color:white; padding:3px 8px; border-radius:4px; font-size:11px; }
+        .non-returnable { background: #e67e22; color:white; padding:3px 8px; border-radius:4px; font-size:11px; }
     </style>
 </head>
 <body>
@@ -38,7 +41,8 @@
         <h3>Your Gate Pass Requests</h3>
         <table>
             <tr>
-                <th>CGP No</th>
+                <th>Gate Pass No</th>
+                <th>Type</th>
                 <th>Material</th>
                 <th>Quantity</th>
                 <th>Department</th>
@@ -53,17 +57,40 @@
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setString(1, name);
         ResultSet rs = ps.executeQuery();
+        boolean found = false;
         while(rs.next()){
+            found = true;
             String status = rs.getString("status");
+            String gpNo = rs.getString("gate_pass_no");
+            if(gpNo == null) gpNo = "GP-" + rs.getInt("cgp_no");
+            String gpType = "";
+            try { gpType = rs.getString("gp_type"); } catch(Exception ex){ gpType = "Returnable"; }
+            if(gpType == null) gpType = "Returnable";
 %>
             <tr>
-                <td><%=rs.getInt("cgp_no")%></td>
+                <td class="gp-no"><%=gpNo%></td>
+                <td>
+                    <% if(gpType.equals("Returnable")){ %>
+                    <span class="returnable">🔄 Returnable</span>
+                    <% } else { %>
+                    <span class="non-returnable">📦 Non-Returnable</span>
+                    <% } %>
+                </td>
                 <td><%=rs.getString("material_name")%></td>
                 <td><%=rs.getInt("quantity")%></td>
                 <td><%=rs.getString("department")%></td>
                 <td><%=rs.getString("purpose")%></td>
                 <td><%=rs.getString("date")%></td>
                 <td><span class="<%=status.toLowerCase()%>"><%=status%></span></td>
+            </tr>
+<%
+        }
+        if(!found){
+%>
+            <tr>
+                <td colspan="8" style="text-align:center; padding:20px; color:#999;">
+                    No gate passes found. Create your first gate pass!
+                </td>
             </tr>
 <%
         }
