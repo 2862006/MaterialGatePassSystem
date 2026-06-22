@@ -50,9 +50,7 @@
             cursor: pointer;
             margin-top: 10px;
         }
-        button:hover {
-            background-color: #45a049;
-        }
+        button:hover { background-color: #45a049; }
         .error {
             color: red;
             text-align: center;
@@ -64,15 +62,13 @@
     <div class="login-box">
         <h2>🏭 Gate Pass System</h2>
         <p>Material Gate Pass Management</p>
-        
-        <form action="LoginServlet" method="post">
-            <input type="email" name="email" 
+        <form action="${pageContext.request.contextPath}/LoginServlet" method="post">
+            <input type="text" name="email"
                    placeholder="Enter Email" required/>
-            <input type="password" name="password" 
+            <input type="password" name="password"
                    placeholder="Enter Password" required/>
             <button type="submit">Login</button>
         </form>
-        
         <% if(request.getParameter("error") != null){ %>
             <p class="error">❌ Invalid Email or Password!</p>
         <% } %>

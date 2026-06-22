@@ -65,13 +65,11 @@
         <h2>🏭 Material Gate Pass System</h2>
         <a href="../LogoutServlet" class="logout">Logout</a>
     </div>
-
     <div class="container">
         <div class="welcome">
             <h3>Welcome, <%= name %>! 👋</h3>
             <p>You are logged in as <b>Employee</b></p>
         </div>
-
         <div class="cards">
             <a href="createGatePass.jsp" class="card card1">
                 <div class="icon">📝</div>

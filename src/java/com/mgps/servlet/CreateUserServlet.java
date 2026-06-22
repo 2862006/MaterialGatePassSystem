@@ -1,11 +1,14 @@
 package com.mgps.servlet;
 
 import com.mgps.util.DBConnection;
-import java.io.*;
-import java.sql.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/CreateUserServlet")
 public class CreateUserServlet extends HttpServlet {
@@ -22,9 +25,8 @@ public class CreateUserServlet extends HttpServlet {
 
         try {
             Connection con = DBConnection.getConnection();
-            String sql = "INSERT INTO users "
-                + "(name,email_id,mobile_number,role,password) "
-                + "VALUES (?,?,?,?,?)";
+
+            String sql = "INSERT INTO users (name,email_id,mobile_number,role,password) VALUES (?,?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, name);
             ps.setString(2, email_id);
@@ -33,11 +35,12 @@ public class CreateUserServlet extends HttpServlet {
             ps.setString(5, password);
             ps.executeUpdate();
             con.close();
-            response.sendRedirect(
-                "admin/createUser.jsp?success=1");
-        } catch(Exception e) {
+
+            response.sendRedirect(request.getContextPath() + "/admin/createUser.jsp?success=1");
+
+        } catch (Exception e) {
             e.printStackTrace();
-            response.sendRedirect("admin/createUser.jsp");
+            response.sendRedirect(request.getContextPath() + "/admin/createUser.jsp");
         }
     }
 }

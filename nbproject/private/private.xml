@@ -21,6 +21,9 @@
             <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/web/admin/reports.jsp</file>
             <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/src/java/com/mgps/servlet/LogoutServlet.java</file>
             <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/web/employee/myPasses.jsp</file>
+            <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/src/java/com/mgps/servlet/CreateUserServlet.java</file>
+            <file>file:/C:/Users/rosha/OneDrive/Documents/NetBeansProjects/MaterialGatePassSystem/web/META-INF/context.xml</file>
         </group>
     </open-files>
 </project-private>

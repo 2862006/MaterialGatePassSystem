@@ -1,9 +1,12 @@
 package com.mgps.servlet;
 
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
@@ -13,10 +16,11 @@ public class LogoutServlet extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession(false);
-        if(session != null){
+        if (session != null) {
             session.invalidate();
         }
+
         response.sendRedirect(
-            request.getContextPath() + "/login.jsp");
+                request.getContextPath() + "/login.jsp");
     }
 }

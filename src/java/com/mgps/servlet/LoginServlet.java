@@ -1,11 +1,16 @@
 package com.mgps.servlet;
 
 import com.mgps.util.DBConnection;
-import java.io.*;
-import java.sql.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -18,7 +23,6 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            DBConnection.initDatabase();
             Connection con = DBConnection.getConnection();
             String sql = "SELECT * FROM users WHERE email_id=? AND password=?";
             PreparedStatement ps = con.prepareStatement(sql);
@@ -33,21 +37,25 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("role", role);
                 session.setAttribute("name", name);
                 session.setAttribute("email", email);
-
-                if (role.equals("ADMIN")) {
-                    request.getRequestDispatcher("/admin/dashboard.jsp").forward(request, response);
-                } else if (role.equals("EMPLOYEE")) {
-                    request.getRequestDispatcher("/employee/dashboard.jsp").forward(request, response);
-                } else if (role.equals("SECURITY")) {
-                    request.getRequestDispatcher("/security/dashboard.jsp").forward(request, response);
+                String ctx = request.getContextPath();
+                if (role.equals("Admin")) {
+                    response.sendRedirect(ctx + "/admin/dashboard.jsp");
+                } else if (role.equals("Employee")) {
+                    response.sendRedirect(ctx + "/employee/dashboard.jsp");
+                } else if (role.equals("Security")) {
+                    response.sendRedirect(ctx + "/security/dashboard.jsp");
+                } else {
+                    response.sendRedirect(ctx + "/login.jsp?error=1");
                 }
             } else {
-                request.getRequestDispatcher("/login.jsp?error=1").forward(request, response);
+                response.sendRedirect(
+                    request.getContextPath() + "/login.jsp?error=1");
             }
             con.close();
         } catch (Exception e) {
             e.printStackTrace();
-            request.getRequestDispatcher("/login.jsp?error=1").forward(request, response);
+            response.sendRedirect(
+                request.getContextPath() + "/login.jsp?error=1");
         }
     }
 }
